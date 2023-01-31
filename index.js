@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         pre-fill for forms.yandex.ru
 // @namespace    http://tampermonkey.net/
-// @version      0.6
+// @version      0.7
 // @description  try to take over the world!
 // @author       You
 // @match        https://forms.yandex.ru/surveys/*
@@ -36,7 +36,7 @@
   const welcomeContentText = 'Привет! 👋🏻 Вы тайный покупатель, не забывайте важные вещи:'
 
   const getWelcomeButton = () => document.querySelector("body > div.b-page__content > div > div.survey-wrap > form > div.survey__submit-button > button.button.button_theme_action.button_size_m.button_role_next.i-bem.button_js_inited");
-  const welcomeButtonText = 'Начать';
+  const welcomeButtonText = 'Далее';
 
   const getDesktopTitle = () => document.querySelector("body > div.b-page__content > div > div.survey-header > div > h1");
   const getMobileTitle = () => document.querySelector("body > div.b-page__content > div > div.survey-header > div > h3");
